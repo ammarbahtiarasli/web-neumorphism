@@ -357,7 +357,7 @@
                       </div>
                     </div>
                   </div>
-                  <form class="col-12 col-md-8 mx-auto">
+                  <form class="col-12 col-md-8 mx-auto" action="POST" data-netlify="true">
                     <!-- Form -->
                     <div class="form-group">
                       <label for="nameInputIcon2">Your Name</label>
@@ -367,7 +367,7 @@
                         </div>
                         <input
                           class="form-control"
-                          id="nameInputIcon2"
+                          id="name"
                           placeholder="Your name"
                           type="text"
                           aria-label="contact name input"
@@ -383,7 +383,7 @@
                         </div>
                         <input
                           class="form-control"
-                          id="emailInputIcon2"
+                          id="email"
                           placeholder="example@gmail.com"
                           type="email"
                           aria-label="contact email input"
@@ -396,10 +396,12 @@
                       <textarea
                         class="form-control"
                         placeholder="Enter your message..."
-                        id="exampleFormControlTextarea2"
+                        id="message"
                         rows="4"
                       ></textarea>
                     </div>
+
+                    <div data-netlify-recaptcha="true"></div>
                     <!-- End of Form -->
                     <div class="card-footer px-0 mx-auto">
                       <button type="submit" class="btn btn-primary">Send Message</button>
